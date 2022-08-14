@@ -1,0 +1,4 @@
+alias be="bundle exec"
+alias plan="cat ~/.plan"
+
+PS1="\[$(tput bold)\]\[\033[38;5;4m\]\w\[$(tput sgr0)\]\[$(tput bold)\]\[\033[38;5;6m\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput sgr0)\]\[$(tput bold)\]\\$\[$(tput sgr0)\] "

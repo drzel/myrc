@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
-ln -s $(pwd)/.bash_aliases $HOME/.bash_aliases
+ln -s $(pwd)/.myrc $HOME/.myrc
+
+echo To complete install, append the following to ~/.bashrc / ~/.zshrc etc
+echo source ~/.myrc
